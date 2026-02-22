@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveInput;
     private bool jumpInput;
+    private bool _jumpPressedThisFrame;
     private bool isCrouching;
 
     private void Awake()
@@ -22,7 +23,8 @@ public class PlayerMovement : MonoBehaviour
         inputActions.Player.Move.performed += OnMove;
         inputActions.Player.Move.canceled += OnMove;
 
-        inputActions.Player.Jump.performed += OnJump; 
+        inputActions.Player.Jump.started += OnJump;
+        inputActions.Player.Jump.canceled += OnJump; 
         inputActions.Player.Crouch.started += OnCrouchStart;
         inputActions.Player.Crouch.canceled += OnCrouchEnd;
     }
@@ -41,10 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        cc2d.Move(moveInput.x, isCrouching, jumpInput);
-
-        // reset jump since it is set to true whenever space is pressed down
-        jumpInput = false;
+        cc2d.Move(moveInput.x, isCrouching, _jumpPressedThisFrame, jumpInput);
+        _jumpPressedThisFrame = false;
     }
 
     // ----------- Action Handlers ------------
@@ -53,13 +53,22 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
         Debug.Log($"Move input: {moveInput}");
-        
     }
 
     private void OnJump(InputAction.CallbackContext context)
     {
-        Debug.Log("Jump triggered!");
-        jumpInput = true;
+        Debug.Log($"Jump triggered with {context.phase}");
+
+        if(context.started)
+        {
+            _jumpPressedThisFrame = true;
+            jumpInput = true;
+        }
+
+        if(context.canceled)
+        {
+            jumpInput = false;
+        }
     }
 
     private void OnCrouchStart(InputAction.CallbackContext context)

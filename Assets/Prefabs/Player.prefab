@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 818093118043846337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.52, z: 0}
+  m_LocalPosition: {x: -0.038, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957414688361151646}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Physics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575565022105105528}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2620799574067216160}
   - component: {fileID: 6215076877837901143}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8374939160093249898}
   - component: {fileID: 6433164302981692591}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,6 +238,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6433164302981692591
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -256,6 +257,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -277,9 +280,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 154385347
   m_SortingLayer: 2
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: -493253066740806785, guid: 3219c4a549b1eff6599868e33d83cde5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -289,7 +294,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6456787851214584547
 GameObject:
@@ -307,7 +311,7 @@ GameObject:
   - component: {fileID: 5214239710760108493}
   - component: {fileID: 8625107204418199653}
   - component: {fileID: 3317369713792888585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,19 +435,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6488d7a5b45a7964d4824f04975a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MoveSpeed: 5
-  m_MovingThreshold: 0.75
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.35
-  m_AirSpeed: 0.65
-  m_MovementSmoothing: 0.15
-  m_AirControl: 1
-  m_WhatIsGround:
+  _moveSpeed: 5
+  _movingThreshold: 0.1
+  _jumpForce: 420
+  _maxFallingSpeed: 9
+  _fallingGravityScale: 3.7
+  _jumpApexGravityScale: 2
+  _jumpApexSpeedThreshold: 3
+  _standardGravityScale: 1
+  _crouchSpeed: 0.36
+  _airSpeed: 0.904
+  _movementSmoothing: 0.0885
+  _airControl: 1
+  _whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  m_GroundCheck: {fileID: 4758196466315876605}
-  m_CeilingCheck: {fileID: 92270328510873189}
-  m_CrouchDisableCollider: {fileID: 6215076877837901143}
+  _groundCheckLocation: {fileID: 4758196466315876605}
+  _ceilingCheckLocation: {fileID: 92270328510873189}
+  _crouchDisableCollider: {fileID: 6215076877837901143}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -626,9 +635,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetRigidbody: {fileID: 8851009210472590474}
   cc2d: {fileID: 3139860656780971447}
-  minVelocity: 0.1
+  minVelocity: 0.05
   maxVelocity: 5
   minStepRate: 1
-  maxStepRate: 5
-  minVolume: 0.2
+  maxStepRate: 6
+  minVolume: 0.15
   maxVolume: 1

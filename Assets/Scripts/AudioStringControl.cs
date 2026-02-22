@@ -39,7 +39,6 @@ public class AudioFlickerFromString : MonoBehaviour
         // Map 'a' to min, 'z' to max
         float normalized = Mathf.InverseLerp('a', 'z', currentChar);
         float volume = Mathf.Lerp(volumeMin, volumeMax, normalized);
-        Debug.Log(volume + " || " + currentChar);
         source.volume = volume;
     }
 }
