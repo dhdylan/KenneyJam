@@ -6,7 +6,7 @@ public class CharacterController2D : MonoBehaviour
 
     [SerializeField] private float _moveSpeed = 10f;
     [SerializeField] private float _movingThreshold = 1f;
-    [SerializeField] private float _jumpForce = 400f;                           // Amount of force added when the player jumps.
+	[SerializeField] private float _jumpVelocity = 9f;                          // Amount of force added when the player jumps.
     [SerializeField] private float _maxFallingSpeed = 10f;
 	[SerializeField] private float _fallingGravityScale = 2f; 
 	[SerializeField] private float _jumpApexGravityScale = 0.5f;
@@ -211,13 +211,13 @@ public class CharacterController2D : MonoBehaviour
             {
                 // Add a vertical force to the player.
                 _grounded = false;
-                _rigidbody2D.AddForce(new Vector2(0f, _jumpForce), ForceMode2D.Force);
+                _rigidbody2D.linearVelocityY = _jumpVelocity;
             }
             else if (!_hasUsedDoubleJump)
             {
 				_hasUsedDoubleJump = true;
-                _rigidbody2D.AddForce(new Vector2(0f, _jumpForce), ForceMode2D.Force);
-            }
+				_rigidbody2D.linearVelocityY = _jumpVelocity;            
+			}
         }
 		
 
