@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 98d7b61d097e74c43a196e291ce9a8c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6735416877400842828
+    second: AttackStaffVFX_0
+  - first:
+      213: 28872116039585939
+    second: AttackStaffVFX_1
+  - first:
+      213: 5991925713542699107
+    second: AttackStaffVFX_2
+  - first:
+      213: -318399902111097883
+    second: AttackStaffVFX_3
+  - first:
+      213: -6141041539198064525
+    second: AttackStaffVFX_4
+  - first:
+      213: -8746440145601765329
+    second: AttackStaffVFX_5
+  - first:
+      213: -3308694988733489428
+    second: AttackStaffVFX_6
+  - first:
+      213: 5688113616600719919
+    second: AttackStaffVFX_7
+  - first:
+      213: -2902672579733719774
+    second: AttackStaffVFX_8
+  - first:
+      213: -4644567613807154917
+    second: AttackStaffVFX_9
+  - first:
+      213: 3301122917281163151
+    second: AttackStaffVFX_10
+  - first:
+      213: -5042365683684646477
+    second: AttackStaffVFX_11
+  - first:
+      213: 7851451230518978052
+    second: AttackStaffVFX_12
+  - first:
+      213: 118807587701477472
+    second: AttackStaffVFX_13
+  - first:
+      213: -7425418029208298900
+    second: AttackStaffVFX_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AttackStaffVFX_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 28
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42e5a7d6f1097d50800000000000000
+      internalID: 6735416877400842828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 24
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390147c5903966000800000000000000
+      internalID: 28872116039585939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 24
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368dd3c90b8972350800000000000000
+      internalID: 5991925713542699107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_3
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 25
+        width: 114
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb162ad9f0d49bf0800000000000000
+      internalID: -318399902111097883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_4
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 36
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3786e29b143a6caa0800000000000000
+      internalID: -6141041539198064525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_5
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 25
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20e03837076e9680800000000000000
+      internalID: -8746440145601765329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_6
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 31
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceedc6e10772512d0800000000000000
+      internalID: -3308694988733489428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 21
+        width: 148
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f226c87823d30fe40800000000000000
+      internalID: 5688113616600719919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_8
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 13
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22574b1faa2a7b7d0800000000000000
+      internalID: -2902672579733719774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_9
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 38
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19adbbfc5e2b8fb0800000000000000
+      internalID: -4644567613807154917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_10
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 23
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87e17c9dc1ffcd20800000000000000
+      internalID: 3301122917281163151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 22
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b16b54502be50ab0800000000000000
+      internalID: -5042365683684646477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_12
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 20
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406236e9b45f5fc60800000000000000
+      internalID: 7851451230518978052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 20
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060519d1fd616a100800000000000000
+      internalID: 118807587701477472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackStaffVFX_14
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 14
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a124cd4ad93f890800000000000000
+      internalID: -7425418029208298900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AttackStaffVFX_0: 6735416877400842828
+      AttackStaffVFX_1: 28872116039585939
+      AttackStaffVFX_10: 3301122917281163151
+      AttackStaffVFX_11: -5042365683684646477
+      AttackStaffVFX_12: 7851451230518978052
+      AttackStaffVFX_13: 118807587701477472
+      AttackStaffVFX_14: -7425418029208298900
+      AttackStaffVFX_2: 5991925713542699107
+      AttackStaffVFX_3: -318399902111097883
+      AttackStaffVFX_4: -6141041539198064525
+      AttackStaffVFX_5: -8746440145601765329
+      AttackStaffVFX_6: -3308694988733489428
+      AttackStaffVFX_7: 5688113616600719919
+      AttackStaffVFX_8: -2902672579733719774
+      AttackStaffVFX_9: -4644567613807154917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

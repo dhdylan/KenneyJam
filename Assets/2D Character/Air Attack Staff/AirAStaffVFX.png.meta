@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: bd95e9a03390d024bb916fbfe575b4e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1127007584716852317
+    second: AirAStaffVFX_0
+  - first:
+      213: 167096608827654745
+    second: AirAStaffVFX_1
+  - first:
+      213: 7970726011026831325
+    second: AirAStaffVFX_2
+  - first:
+      213: 750964308954612582
+    second: AirAStaffVFX_3
+  - first:
+      213: 6963551483391686648
+    second: AirAStaffVFX_4
+  - first:
+      213: -253913936290192730
+    second: AirAStaffVFX_5
+  - first:
+      213: 2460934273005325408
+    second: AirAStaffVFX_6
+  - first:
+      213: 6958587524727169944
+    second: AirAStaffVFX_7
+  - first:
+      213: -4888056014199673769
+    second: AirAStaffVFX_8
+  - first:
+      213: -5413662246406315173
+    second: AirAStaffVFX_9
+  - first:
+      213: -50208588733639250
+    second: AirAStaffVFX_10
+  - first:
+      213: -8201622836619230760
+    second: AirAStaffVFX_11
+  - first:
+      213: 5151876852914255612
+    second: AirAStaffVFX_12
+  - first:
+      213: -4017694780944401727
+    second: AirAStaffVFX_13
+  - first:
+      213: 4789443686847222005
+    second: AirAStaffVFX_14
+  - first:
+      213: 8987842141996021313
+    second: AirAStaffVFX_15
+  - first:
+      213: -9149027376564127502
+    second: AirAStaffVFX_16
+  - first:
+      213: -2481695056633103139
+    second: AirAStaffVFX_17
+  - first:
+      213: 2454070593984885025
+    second: AirAStaffVFX_18
+  - first:
+      213: -4680492742281192419
+    second: AirAStaffVFX_19
+  - first:
+      213: -7017707071675275839
+    second: AirAStaffVFX_20
+  - first:
+      213: -1581849471539081061
+    second: AirAStaffVFX_21
+  - first:
+      213: -369018607190928826
+    second: AirAStaffVFX_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AirAStaffVFX_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 27
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3f7c5a2901c50f0800000000000000
+      internalID: -1127007584716852317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 25
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952485cfa75a15200800000000000000
+      internalID: 167096608827654745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 23
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd778398315bd9e60800000000000000
+      internalID: 7970726011026831325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 27
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6638c3a6f06fb6a00800000000000000
+      internalID: 750964308954612582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 23
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7b4befd2183a060800000000000000
+      internalID: 6963551483391686648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 25
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2e6e7ce9ae97cf0800000000000000
+      internalID: -253913936290192730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 22
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c0116ceaef62220800000000000000
+      internalID: 2460934273005325408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 23
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893e3dd4c7ed19060800000000000000
+      internalID: 6958587524727169944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 18
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75caa6ff3f22a2cb0800000000000000
+      internalID: -4888056014199673769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_9
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 29
+        width: 35
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b532205aedeced4b0800000000000000
+      internalID: -5413662246406315173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_10
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 25
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea59bd7fd8f9d4ff0800000000000000
+      internalID: -50208588733639250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_11
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 19
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d14491fb7bfd2e80800000000000000
+      internalID: -8201622836619230760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_12
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 28
+        width: 72
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6f280b3b42f7740800000000000000
+      internalID: 5151876852914255612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_13
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 26
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca3ed522e74e38c0800000000000000
+      internalID: -4017694780944401727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_14
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 22
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0144a58a5877240800000000000000
+      internalID: 4789443686847222005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 23
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14675fafeca3bbc70800000000000000
+      internalID: 8987842141996021313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_16
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 18
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8329b1310280180800000000000000
+      internalID: -9149027376564127502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_17
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 29
+        width: 35
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc7a8c9e7f3f8dd0800000000000000
+      internalID: -2481695056633103139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_18
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 26
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1217338f33c9e0220800000000000000
+      internalID: 2454070593984885025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_19
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 20
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c198236ac8b0fb0800000000000000
+      internalID: -4680492742281192419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_20
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 28
+        width: 234
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c56c0789981c9e90800000000000000
+      internalID: -7017707071675275839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_21
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 18
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9016c069442c0ae0800000000000000
+      internalID: -1581849471539081061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAStaffVFX_22
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 18
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64210ea288bf0eaf0800000000000000
+      internalID: -369018607190928826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AirAStaffVFX_0: -1127007584716852317
+      AirAStaffVFX_1: 167096608827654745
+      AirAStaffVFX_10: -50208588733639250
+      AirAStaffVFX_11: -8201622836619230760
+      AirAStaffVFX_12: 5151876852914255612
+      AirAStaffVFX_13: -4017694780944401727
+      AirAStaffVFX_14: 4789443686847222005
+      AirAStaffVFX_15: 8987842141996021313
+      AirAStaffVFX_16: -9149027376564127502
+      AirAStaffVFX_17: -2481695056633103139
+      AirAStaffVFX_18: 2454070593984885025
+      AirAStaffVFX_19: -4680492742281192419
+      AirAStaffVFX_2: 7970726011026831325
+      AirAStaffVFX_20: -7017707071675275839
+      AirAStaffVFX_21: -1581849471539081061
+      AirAStaffVFX_22: -369018607190928826
+      AirAStaffVFX_3: 750964308954612582
+      AirAStaffVFX_4: 6963551483391686648
+      AirAStaffVFX_5: -253913936290192730
+      AirAStaffVFX_6: 2460934273005325408
+      AirAStaffVFX_7: 6958587524727169944
+      AirAStaffVFX_8: -4888056014199673769
+      AirAStaffVFX_9: -5413662246406315173
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

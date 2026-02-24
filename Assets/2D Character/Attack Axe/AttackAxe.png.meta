@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: db2216a2433270340a3b24b7caef87f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5811953038701583379
+    second: AttackAxe_0
+  - first:
+      213: 7599369348762705775
+    second: AttackAxe_1
+  - first:
+      213: 617057259437020027
+    second: AttackAxe_2
+  - first:
+      213: -1393250673228874091
+    second: AttackAxe_3
+  - first:
+      213: -7425097400346791068
+    second: AttackAxe_4
+  - first:
+      213: 4137213710323246541
+    second: AttackAxe_5
+  - first:
+      213: -2815299961469171743
+    second: AttackAxe_6
+  - first:
+      213: -3598876000965134407
+    second: AttackAxe_7
+  - first:
+      213: -4313141038738869993
+    second: AttackAxe_8
+  - first:
+      213: -603597844626113993
+    second: AttackAxe_9
+  - first:
+      213: -8329156743338511947
+    second: AttackAxe_10
+  - first:
+      213: -2607088900702868130
+    second: AttackAxe_11
+  - first:
+      213: -7994560522964467111
+    second: AttackAxe_12
+  - first:
+      213: -9203537575656209345
+    second: AttackAxe_13
+  - first:
+      213: -1198436861288586257
+    second: AttackAxe_14
+  - first:
+      213: -1779662170111714573
+    second: AttackAxe_15
+  - first:
+      213: -3953162287116794636
+    second: AttackAxe_16
+  - first:
+      213: -1734197705103097898
+    second: AttackAxe_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AttackAxe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3a0fc118bc75fa0800000000000000
+      internalID: -5811953038701583379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 11
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f1ef5d822667960800000000000000
+      internalID: 7599369348762705775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 11
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73d1d2ee4a309800800000000000000
+      internalID: 617057259437020027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 11
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e7e1bf4ed2aace0800000000000000
+      internalID: -1393250673228874091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 11
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46337a51141c4f890800000000000000
+      internalID: -7425097400346791068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 11
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc561bb13f55a6930800000000000000
+      internalID: 4137213710323246541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 11
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e78574e99b0ee8d0800000000000000
+      internalID: -2815299961469171743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_7
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 11
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b77bc348593e0ec0800000000000000
+      internalID: -3598876000965134407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_8
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 11
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7117fc7c315a424c0800000000000000
+      internalID: -4313141038738869993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_9
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 11
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a7ed355f69f97f0800000000000000
+      internalID: -603597844626113993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_10
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 11
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b132ca5214e86c80800000000000000
+      internalID: -8329156743338511947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_11
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 11
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dedbf2572c1dbd0800000000000000
+      internalID: -2607088900702868130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_12
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 11
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9528755bf8d9d0190800000000000000
+      internalID: -7994560522964467111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_13
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 11
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f344d0e5657764080800000000000000
+      internalID: -9203537575656209345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_14
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 11
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3e825360c4e5fe0800000000000000
+      internalID: -1198436861288586257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_15
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 11
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa5a427fae5d47e0800000000000000
+      internalID: -1779662170111714573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_16
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 11
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4cee838db8329c0800000000000000
+      internalID: -3953162287116794636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackAxe_17
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 11
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df38091064eee7e0800000000000000
+      internalID: -1734197705103097898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AttackAxe_0: -5811953038701583379
+      AttackAxe_1: 7599369348762705775
+      AttackAxe_10: -8329156743338511947
+      AttackAxe_11: -2607088900702868130
+      AttackAxe_12: -7994560522964467111
+      AttackAxe_13: -9203537575656209345
+      AttackAxe_14: -1198436861288586257
+      AttackAxe_15: -1779662170111714573
+      AttackAxe_16: -3953162287116794636
+      AttackAxe_17: -1734197705103097898
+      AttackAxe_2: 617057259437020027
+      AttackAxe_3: -1393250673228874091
+      AttackAxe_4: -7425097400346791068
+      AttackAxe_5: 4137213710323246541
+      AttackAxe_6: -2815299961469171743
+      AttackAxe_7: -3598876000965134407
+      AttackAxe_8: -4313141038738869993
+      AttackAxe_9: -603597844626113993
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: a587096d0fddd9844b82e2a9cb87761b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3891835548005932925
+    second: AirAAxeVFX_0
+  - first:
+      213: 2630312360751963536
+    second: AirAAxeVFX_1
+  - first:
+      213: 136636635402244650
+    second: AirAAxeVFX_2
+  - first:
+      213: 5937823203463316712
+    second: AirAAxeVFX_3
+  - first:
+      213: -1712004234894468350
+    second: AirAAxeVFX_4
+  - first:
+      213: 6505167655491877761
+    second: AirAAxeVFX_5
+  - first:
+      213: -1654887651510198188
+    second: AirAAxeVFX_6
+  - first:
+      213: 4040732122643144314
+    second: AirAAxeVFX_7
+  - first:
+      213: -2662334946315475346
+    second: AirAAxeVFX_8
+  - first:
+      213: -3617578108718384824
+    second: AirAAxeVFX_9
+  - first:
+      213: 5107883104560328992
+    second: AirAAxeVFX_10
+  - first:
+      213: 800917269885385723
+    second: AirAAxeVFX_11
+  - first:
+      213: -5785043959048401022
+    second: AirAAxeVFX_12
+  - first:
+      213: -2136990919722960374
+    second: AirAAxeVFX_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AirAAxeVFX_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 22
+        width: 60
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3806edc503c6df9c0800000000000000
+      internalID: -3891835548005932925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 25
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d90f6f72fb08420800000000000000
+      internalID: 2630312360751963536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 22
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a229474cb4e65e100800000000000000
+      internalID: 136636635402244650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 34
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4c08d5eb2676250800000000000000
+      internalID: 5937823203463316712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 25
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b962d083dbd38e0800000000000000
+      internalID: -1712004234894468350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 22
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b34fd448ff64a50800000000000000
+      internalID: 6505167655491877761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_6
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 22
+        width: 105
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450ed8ce278a809e0800000000000000
+      internalID: -1654887651510198188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_7
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 22
+        width: 97
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e97a2f470931830800000000000000
+      internalID: 4040732122643144314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_8
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 21
+        width: 67
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66e1c3d87c7d0bd0800000000000000
+      internalID: -2662334946315475346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_9
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 21
+        width: 68
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8497c9a70e7cbcdc0800000000000000
+      internalID: -3617578108718384824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_10
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 22
+        width: 47
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021b981fe98d2e640800000000000000
+      internalID: 5107883104560328992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_11
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 30
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb7ef5730e6d1b00800000000000000
+      internalID: 800917269885385723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_12
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 21
+        width: 67
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f86e27b2567bfa0800000000000000
+      internalID: -5785043959048401022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAAxeVFX_13
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 21
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a7dada412e752e0800000000000000
+      internalID: -2136990919722960374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AirAAxeVFX_0: -3891835548005932925
+      AirAAxeVFX_1: 2630312360751963536
+      AirAAxeVFX_10: 5107883104560328992
+      AirAAxeVFX_11: 800917269885385723
+      AirAAxeVFX_12: -5785043959048401022
+      AirAAxeVFX_13: -2136990919722960374
+      AirAAxeVFX_2: 136636635402244650
+      AirAAxeVFX_3: 5937823203463316712
+      AirAAxeVFX_4: -1712004234894468350
+      AirAAxeVFX_5: 6505167655491877761
+      AirAAxeVFX_6: -1654887651510198188
+      AirAAxeVFX_7: 4040732122643144314
+      AirAAxeVFX_8: -2662334946315475346
+      AirAAxeVFX_9: -3617578108718384824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
