@@ -26,8 +26,8 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform _groundCheckLocation;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform _ceilingCheckLocation;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D _crouchDisableCollider;				// A collider that will be disabled when crouching
-
-	const float GROUNDED_RADIUS = .1f; // Radius of the overlap circle to determine if grounded
+	[SerializeField] private float _groundedRadius = 0.1f; // Radius of the overlap circle to determine if grounded
+	
 	private bool _grounded;            // Whether or not the player is grounded.
 	private bool _isFalling;
 	private bool _hasUsedDoubleJump;
@@ -70,7 +70,7 @@ public class CharacterController2D : MonoBehaviour
 		// DO GROUND CHECK
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
-		Collider2D[] colliders = Physics2D.OverlapCircleAll(_groundCheckLocation.position, GROUNDED_RADIUS, _whatIsGround);
+		Collider2D[] colliders = Physics2D.OverlapCircleAll(_groundCheckLocation.position, _groundedRadius, _whatIsGround);
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != gameObject)
@@ -210,7 +210,6 @@ public class CharacterController2D : MonoBehaviour
             if (_grounded)
             {
                 // Add a vertical force to the player.
-                _grounded = false;
                 _rigidbody2D.linearVelocityY = _jumpVelocity;
             }
             else if (!_hasUsedDoubleJump)
