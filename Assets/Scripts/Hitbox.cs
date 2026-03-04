@@ -5,6 +5,11 @@ public class Hitbox : MonoBehaviour
 {
     public Hit currentHit;
 
+    private void Awake()
+    {
+        currentHit.instigator = gameObject;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))

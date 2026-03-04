@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        playerMovementController = player.movementController2D;
+        playerMovementController = player.GetMovementController();
     }
 
     private void OnEnable()

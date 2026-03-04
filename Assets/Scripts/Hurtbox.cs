@@ -4,7 +4,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider2D), typeof(Rigidbody2D))]
 public class Hurtbox : MonoBehaviour
 {
-    public UnityEvent<int> OnHurt;
+    public UnityEvent<Hit> OnHurt;
     
     public void Hurt(Hit hit)
     {
@@ -14,7 +14,7 @@ public class Hurtbox : MonoBehaviour
         }
         else
         {
-            OnHurt.Invoke(hit.damage);
+            OnHurt.Invoke(hit);
         }
     }
 }

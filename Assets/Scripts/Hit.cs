@@ -4,4 +4,7 @@
 public class Hit : ScriptableObject
 {
     public int damage = 1;
+    public float knockbackAmount = 5f;
+
+    public GameObject instigator { get; set; }
 }

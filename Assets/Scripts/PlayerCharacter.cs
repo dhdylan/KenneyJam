@@ -6,16 +6,29 @@ public class PlayerCharacter : Character
 {
     [SerializeField] private Hitbox basicAttackHitbox;
     [SerializeField] private Hurtbox hurtbox;
+    
+    private MovementController2D movementController2D;
 
     private Coroutine basicAttackCoroutine;
 
+    #region Unity Callbacks
     protected override void Awake()
     {
         base.Awake();
 
+        movementController2D = GetComponent<MovementController2D>();
+    }
+
+    protected void Start()
+    {
         hurtbox.OnHurt.AddListener(OnPlayerHurt);
         health.OnDeath.AddListener(OnPlayerDied);
-    }
+    } 
+    #endregion
+
+    #region Getters Setters
+    public MovementController2D GetMovementController() { return movementController2D; } 
+    #endregion
 
     public void BasicAttack()
     {
@@ -40,16 +53,22 @@ public class PlayerCharacter : Character
     public void ResetForRespawn()
     {
         rigidbody2D.linearVelocity = Vector2.zero;
+        health.SetHealth(health.GetMaxHealth());
     }
 
+    #region Event Handlers
     private void OnPlayerDied()
     {
         GameManager.instance.OnPlayerDied();
     }
 
-    private void OnPlayerHurt(int damage)
+    private void OnPlayerHurt(Hit hit)
     {
-        health.AdjustHealth(-damage);
-        Debug.Log($"Player hurt for {damage} damage. Remaining health: {health.GetCurrentHealth()}");
-    }
+        Vector3 directionFromHit = (transform.position - hit.instigator.transform.position).normalized;
+        rigidbody2D.AddForce(directionFromHit * hit.knockbackAmount, ForceMode2D.Impulse);
+
+        health.AdjustHealth(-hit.damage);
+        Debug.Log($"Player hurt for {hit.damage} damage by {hit.instigator.name}. Remaining health: {health.GetCurrentHealth()}");
+    } 
+    #endregion
 }
