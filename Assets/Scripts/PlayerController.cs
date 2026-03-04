@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnAttack(InputAction.CallbackContext context)
     {
-        player.BasicAttack();
+        player.GetCombatController().BasicAttack();
     }
 
     // ----------- Optional Getter ------------

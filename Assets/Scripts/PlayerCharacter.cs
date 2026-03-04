@@ -1,15 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(MovementController2D), typeof(PlayerCombatController))]
 public class PlayerCharacter : Character
 {
-    [SerializeField] private Hitbox basicAttackHitbox;
     [SerializeField] private Hurtbox hurtbox;
+    [SerializeField] private Animator animator;
     
     private MovementController2D movementController2D;
+    private PlayerCombatController combatController;
 
-    private Coroutine basicAttackCoroutine;
+    private Coroutine preventPlayerMovementFromAttackCoroutine;
 
     #region Unity Callbacks
     protected override void Awake()
@@ -17,38 +18,22 @@ public class PlayerCharacter : Character
         base.Awake();
 
         movementController2D = GetComponent<MovementController2D>();
+        combatController = GetComponent<PlayerCombatController>();
     }
 
     protected void Start()
     {
         hurtbox.OnHurt.AddListener(OnPlayerHurt);
         health.OnDeath.AddListener(OnPlayerDied);
+        combatController.OnBasicAttack.AddListener(OnPlayerBasicAttack);
     } 
     #endregion
 
     #region Getters Setters
     public MovementController2D GetMovementController() { return movementController2D; } 
+    public PlayerCombatController GetCombatController() { return combatController; }
     #endregion
 
-    public void BasicAttack()
-    {
-        if(basicAttackCoroutine != null)
-        {
-            Debug.LogWarning("Basic attack already in progress. Restarting it.", this);
-            StopCoroutine(basicAttackCoroutine);
-        }
-
-        basicAttackCoroutine = StartCoroutine(BasicAttackCoroutine());
-    }
-
-    private IEnumerator BasicAttackCoroutine()
-    {
-        // TODO: Play attack animation here
-        // Enable hitbox for a short duration
-        basicAttackHitbox.gameObject.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
-        basicAttackHitbox.gameObject.SetActive(false);
-    }
 
     public void ResetForRespawn()
     {
@@ -69,6 +54,23 @@ public class PlayerCharacter : Character
 
         health.AdjustHealth(-hit.damage);
         Debug.Log($"Player hurt for {hit.damage} damage by {hit.instigator.name}. Remaining health: {health.GetCurrentHealth()}");
-    } 
+    }
+
+    private void OnPlayerBasicAttack()
+    {
+        if(preventPlayerMovementFromAttackCoroutine != null)
+        {
+            StopCoroutine(preventPlayerMovementFromAttackCoroutine);
+        }
+
+        preventPlayerMovementFromAttackCoroutine = StartCoroutine(PreventPlayerMovementFromAttack());
+    }
+
+    private IEnumerator PreventPlayerMovementFromAttack()
+    {
+        movementController2D.SetCanMove(false);
+        yield return new WaitForSeconds(combatController.GetBasicAttackMovementStopTime());
+        movementController2D.SetCanMove(true);
+    }
     #endregion
 }

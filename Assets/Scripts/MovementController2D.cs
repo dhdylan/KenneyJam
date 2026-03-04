@@ -27,7 +27,8 @@ public class MovementController2D : MonoBehaviour
 	[SerializeField] private Transform _ceilingCheckLocation;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D _crouchDisableCollider;				// A collider that will be disabled when crouching
 	[SerializeField] private float _groundedRadius = 0.1f; // Radius of the overlap circle to determine if grounded
-	
+
+	private bool _canMove = true;
 	private bool _grounded;            // Whether or not the player is grounded.
 	private bool _isFalling;
 	private bool _hasUsedDoubleJump;
@@ -50,12 +51,13 @@ public class MovementController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool _wasCrouching = false;
 
-    private void Awake()
+	#region Unity Callbacks
+	private void Awake()
 	{
 		_rigidbody2D = GetComponent<Rigidbody2D>();
-        m_CharacterAnimator = GetComponent<Animator>();
+		m_CharacterAnimator = GetComponent<Animator>();
 
-        if (OnLandEvent == null)
+		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 
 		if (OnCrouchEvent == null)
@@ -83,30 +85,30 @@ public class MovementController2D : MonoBehaviour
 		}
 
 		// if we're not grounded, then we're in the air
-		if(!_grounded)
+		if (!_grounded)
 		{
 			_isFalling = _rigidbody2D.linearVelocityY < 0;
 
 			// if jump is still being held, do all this extra math bullshit
 			// to make the jump feel good
-			if(_isHoldingJump)
-            {
-                // check if we are near the apex of the jump (y velocity is getting close to 0)
-                // remember, if this is true, then the following two blocks of code are not being evaluated
-                if (Mathf.Abs(_rigidbody2D.linearVelocityY) < _jumpApexSpeedThreshold)
-                {
-                    _rigidbody2D.gravityScale = _jumpApexGravityScale;
-                }
-                // are we falling?
-                else if (_isFalling)
-                {
-                    _rigidbody2D.gravityScale = _fallingGravityScale;
-                }
-                else // otherwise, we are moving up in the air
-                {
-                    _rigidbody2D.gravityScale = _standardGravityScale;
-                }
-            }
+			if (_isHoldingJump)
+			{
+				// check if we are near the apex of the jump (y velocity is getting close to 0)
+				// remember, if this is true, then the following two blocks of code are not being evaluated
+				if (Mathf.Abs(_rigidbody2D.linearVelocityY) < _jumpApexSpeedThreshold)
+				{
+					_rigidbody2D.gravityScale = _jumpApexGravityScale;
+				}
+				// are we falling?
+				else if (_isFalling)
+				{
+					_rigidbody2D.gravityScale = _fallingGravityScale;
+				}
+				else // otherwise, we are moving up in the air
+				{
+					_rigidbody2D.gravityScale = _standardGravityScale;
+				}
+			}
 			else
 			{
 				_rigidbody2D.gravityScale = _fallingGravityScale;
@@ -118,13 +120,21 @@ public class MovementController2D : MonoBehaviour
 		}
 
 		// limit falling speed if necessary
-		if(_rigidbody2D.linearVelocityY < -_maxFallingSpeed)
+		if (_rigidbody2D.linearVelocityY < -_maxFallingSpeed)
 		{
 			_rigidbody2D.linearVelocityY = -_maxFallingSpeed;
 		}
 	}
+	#endregion
 
-    public bool IsGrounded() { return _grounded; }
+	#region Getters Setters
+	public bool IsGrounded() { return _grounded; }
+
+	public void SetCanMove(bool canMove)
+	{
+		_canMove = canMove;
+	} 
+	#endregion
 
 	/// <summary>
 	/// This is intended to be called every frame (fixed update) by some kind of controller object.
@@ -138,8 +148,13 @@ public class MovementController2D : MonoBehaviour
 	{
 		_isHoldingJump = isHoldingJump;
 
-		// If the character is trying to "not crouch", see if they can
-		if (!crouch)
+		// if we are not allowed to move right now
+		// then ignore any movement input
+		if(!_canMove)
+			move = 0f;
+
+        // If the character is trying to "not crouch", see if they can
+        if (!crouch)
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
 			if (Physics2D.OverlapCircle(_ceilingCheckLocation.position, CEILING_RADIUS, _whatIsGround))
@@ -236,8 +251,8 @@ public class MovementController2D : MonoBehaviour
 
 	private void UpdateAnimatorParameters()
 	{
-        m_CharacterAnimator.SetBool("crouching", _wasCrouching);
-        m_CharacterAnimator.SetBool("grounded", _grounded);
-        m_CharacterAnimator.SetBool("moving", _rigidbody2D.linearVelocity.magnitude > _movingThreshold);
-    }
+		m_CharacterAnimator.SetBool("crouching", _wasCrouching);
+		m_CharacterAnimator.SetBool("grounded", _grounded);
+		m_CharacterAnimator.SetBool("moving", _rigidbody2D.linearVelocity.magnitude > _movingThreshold);
+	}
 }
