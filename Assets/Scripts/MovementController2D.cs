@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CharacterController2D : MonoBehaviour
+public class MovementController2D : MonoBehaviour
 {
 
     [SerializeField] private float _moveSpeed = 10f;

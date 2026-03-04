@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private ScreenCover screenCover;
     [SerializeField]
-    private Player player;
+    private PlayerCharacter player;
     [SerializeField]
     private FollowTarget mainCameraFollower;
     [SerializeField]
@@ -41,9 +41,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator OnPlayerDiedCoroutine()
     {
         screenCover.Fade(true);
-        Debug.Log("After fade call");
         yield return screenCover.GetCurrentCoroutine();
-        Debug.Log("After wait for coroutine");
         player.gameObject.SetActive(false);
         player.transform.position = respawnLocation.transform.position;
         mainCameraFollower.transform.position = mainCameraFollower.offset + player.transform.position;
@@ -54,6 +52,5 @@ public class GameManager : MonoBehaviour
         player.gameObject.SetActive(true);
 
         screenCover.Fade(false);
-        Debug.Log("End");
     }
 }

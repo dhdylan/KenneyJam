@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(CharacterController2D))]
-public class PlayerMovement : MonoBehaviour
+[RequireComponent(typeof(MovementController2D))]
+public class PlayerController : MonoBehaviour
 {
-    private CharacterController2D cc2d;
+    [SerializeField] private PlayerCharacter player;
+
+    private MovementController2D playerMovementController;
 
     private InputSystem_Actions inputActions;
 
@@ -15,8 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        cc2d = GetComponent<CharacterController2D>();
-
         inputActions = new InputSystem_Actions();
 
         // Register callbacks
@@ -27,6 +27,13 @@ public class PlayerMovement : MonoBehaviour
         inputActions.Player.Jump.canceled += OnJump; 
         inputActions.Player.Crouch.started += OnCrouchStart;
         inputActions.Player.Crouch.canceled += OnCrouchEnd;
+
+        inputActions.Player.Attack.started += OnAttack;
+    }
+
+    private void Start()
+    {
+        playerMovementController = player.movementController2D;
     }
 
     private void OnEnable()
@@ -43,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        cc2d.Move(moveInput.x, isCrouching, _jumpPressedThisFrame, jumpInput);
+        playerMovementController.Move(moveInput.x, isCrouching, _jumpPressedThisFrame, jumpInput);
         _jumpPressedThisFrame = false;
     }
 
@@ -81,6 +88,11 @@ public class PlayerMovement : MonoBehaviour
     {
         isCrouching = false;
         Debug.Log("Crouch ended");
+    }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        player.BasicAttack();
     }
 
     // ----------- Optional Getter ------------

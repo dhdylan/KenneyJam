@@ -4,8 +4,6 @@ using UnityEngine.Events;
 [RequireComponent(typeof(BoxCollider2D))]
 public class KillVolume : MonoBehaviour
 {
-    public UnityEvent OnPlayerDied;
-
     [SerializeField]
     private BoxCollider2D boxCol;
     [SerializeField]
@@ -20,10 +18,9 @@ public class KillVolume : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent<Player>(out Player player))
+        if (other.TryGetComponent<Health>(out Health health))
         {
-            GameManager.instance.OnPlayerDied();
-            OnPlayerDied.Invoke();
+            health.SetHealth(0);
         }
     }
 

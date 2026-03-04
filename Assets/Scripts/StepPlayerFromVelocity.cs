@@ -8,7 +8,7 @@ public class StepPlayerFromVelocity : MonoBehaviour
     [SerializeField]
     private Rigidbody2D targetRigidbody;
     [SerializeField]
-    private CharacterController2D cc2d;
+    private MovementController2D cc2d;
 
     [Header("Velocity Settings")]
     public float minVelocity = 0.1f;  // Start stepping at this speed
