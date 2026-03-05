@@ -931,8 +931,8 @@ MonoBehaviour:
   cc2d: {fileID: 3139860656780971447}
   minVelocity: 0.05
   maxVelocity: 5
-  minStepRate: 1
-  maxStepRate: 6
+  minStepRate: 0.75
+  maxStepRate: 2
   minVolume: 0.15
   maxVolume: 1
 --- !u!1 &7897501879922949104

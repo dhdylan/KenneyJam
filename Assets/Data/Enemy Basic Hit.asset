@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Enemy Basic Hit
   m_EditorClassIdentifier: Assembly-CSharp::Hit
   damage: 1
-  knockbackAmount: 20
+  knockbackAmount: 15
