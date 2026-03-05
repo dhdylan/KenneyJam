@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,9 +75,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -140,12 +140,12 @@ TextureImporter:
       name: AirASwordVFX_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 19
-        width: 60
-        height: 23
+        x: 0
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: AirASwordVFX_1
       rect:
         serializedVersion: 2
-        x: 91
-        y: 19
-        width: 60
-        height: 22
+        x: 80
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: AirASwordVFX_2
       rect:
         serializedVersion: 2
-        x: 190
-        y: 17
-        width: 41
-        height: 19
+        x: 160
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: AirASwordVFX_3
       rect:
         serializedVersion: 2
-        x: 251
-        y: 19
-        width: 60
-        height: 23
+        x: 240
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: AirASwordVFX_4
       rect:
         serializedVersion: 2
-        x: 331
-        y: 19
-        width: 60
-        height: 23
+        x: 320
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: AirASwordVFX_5
       rect:
         serializedVersion: 2
-        x: 411
-        y: 34
-        width: 8
-        height: 7
+        x: 400
+        y: 0
+        width: 80
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,77 +268,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AirASwordVFX_6
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 29
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e09cd5fea3a6e7e0800000000000000
-      internalID: -1736520634460237600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AirASwordVFX_7
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 24
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 568c8fcb7dd657b20800000000000000
-      internalID: 3131529889261865061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AirASwordVFX_8
-      rect:
-        serializedVersion: 2
-        x: 437
-        y: 19
-        width: 34
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d17f4ea97008806d0800000000000000
-      internalID: -3024026379627464931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2b2f9e68e32e8c344bbacfb9fc845bd7
     internalID: 0
     vertices: []
     indices: 
@@ -346,7 +280,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":80.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       AirASwordVFX_0: -2816156401136395637
       AirASwordVFX_1: -8861766109485925194
@@ -354,9 +290,6 @@ TextureImporter:
       AirASwordVFX_3: 7299153489199546739
       AirASwordVFX_4: -3531771317303185339
       AirASwordVFX_5: -1225269947851333867
-      AirASwordVFX_6: -1736520634460237600
-      AirASwordVFX_7: 3131529889261865061
-      AirASwordVFX_8: -3024026379627464931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

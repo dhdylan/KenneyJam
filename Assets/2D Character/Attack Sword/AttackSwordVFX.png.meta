@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,9 +78,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -143,12 +143,12 @@ TextureImporter:
       name: AttackSwordVFX_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 3
-        width: 84
-        height: 55
+        x: 0
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: AttackSwordVFX_1
       rect:
         serializedVersion: 2
-        x: 154
-        y: 7
-        width: 30
-        height: 50
+        x: 110
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: AttackSwordVFX_2
       rect:
         serializedVersion: 2
-        x: 271
-        y: 10
-        width: 19
-        height: 44
+        x: 220
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: AttackSwordVFX_3
       rect:
         serializedVersion: 2
-        x: 332
-        y: 15
-        width: 106
-        height: 21
+        x: 330
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: AttackSwordVFX_4
       rect:
         serializedVersion: 2
-        x: 442
-        y: 15
-        width: 106
-        height: 21
+        x: 440
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: AttackSwordVFX_5
       rect:
         serializedVersion: 2
-        x: 557
-        y: 27
-        width: 97
-        height: 9
+        x: 550
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: AttackSwordVFX_6
       rect:
         serializedVersion: 2
-        x: 634
-        y: 17
-        width: 24
-        height: 12
+        x: 660
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: AttackSwordVFX_7
       rect:
         serializedVersion: 2
-        x: 669
-        y: 10
-        width: 208
-        height: 52
+        x: 770
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: AttackSwordVFX_8
       rect:
         serializedVersion: 2
-        x: 897
-        y: 7
-        width: 79
-        height: 52
+        x: 880
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: AttackSwordVFX_9
       rect:
         serializedVersion: 2
-        x: 1021
-        y: 12
-        width: 163
-        height: 46
+        x: 990
+        y: 0
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -359,11 +359,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: AttackSwordVFX_10
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc8f607f3c335d49b4a58a1b43da5fc
+      internalID: -22697253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8c84a7e7fada004e8afa7bc51738680
     internalID: 0
     vertices: []
     indices: 
@@ -371,10 +393,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":110.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       AttackSwordVFX_0: -326861608277488551
       AttackSwordVFX_1: -5650662337374406823
+      AttackSwordVFX_10: -22697253
       AttackSwordVFX_2: -3071951534945443108
       AttackSwordVFX_3: -6598038889874021664
       AttackSwordVFX_4: 5171947056564928739
