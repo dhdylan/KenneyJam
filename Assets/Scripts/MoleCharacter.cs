@@ -12,7 +12,8 @@ public class MoleCharacter : Character
     private Animator _animator;
 
     [SerializeField] private float _timeToRun = 5f;
-    [SerializeField] private float _speedToRun = 1f;
+    [SerializeField] private float _speedToRun = 4.5f;
+    [SerializeField] private float _acceleration = 10f;
 
     private float _timeStartedRunning = 0f;
 
@@ -102,8 +103,9 @@ public class MoleCharacter : Character
 
         while (Time.time - _timeStartedRunning < _timeToRun)
         {
-
-            _rb2d.linearVelocityX = (left ? -1 : 1) * _speedToRun;
+            float acceleration = 
+            _rb2d.linearVelocityX += (left ? -1 : 1) * (_acceleration * Time.fixedDeltaTime);
+            _rb2d.linearVelocityX = Mathf.Clamp(_rb2d.linearVelocityX, -_speedToRun, _speedToRun);
 
             yield return null;
         }
