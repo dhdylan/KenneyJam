@@ -18,20 +18,26 @@ public class ElectricPlatform : MonoBehaviour
 
     private Hitbox _hitbox;
     private float _lastShockEndTime = 0f;
+    private float _shockPeriod = 0f;
     private bool _shockEnabled = false;
+
+    private void Awake()
+    {
+        _shockPeriod = _shockDuration + _secondsBetweenShocks;
+        _lastShockEndTime = Time.time - (_shockPeriod * _startPhase);
+    }
 
     private void Start()
     {
         _hitbox = GetComponent<Hitbox>();
         _hitbox.enabled = false;
-        _lastShockEndTime = Time.time;
         _electricitySpriteRenderer.enabled = false;
     }
     private void Update()
     {
         float period = _shockDuration + _secondsBetweenShocks;
                 
-        if (Time.time + (period * _startPhase) > period + _lastShockEndTime) // if time to turn shock off
+        if (Time.time > period + _lastShockEndTime) // if time to turn shock off
         {
             _lastShockEndTime = Time.time;
             _shockEnabled = false;
@@ -40,7 +46,7 @@ public class ElectricPlatform : MonoBehaviour
             _electricitySpriteRenderer.enabled = false;
             _audioSource.Stop();
         }
-        else if ((Time.time + (period * _startPhase) > _lastShockEndTime + _secondsBetweenShocks) && !_shockEnabled) // if time to turn on shock
+        else if ((Time.time > _lastShockEndTime + _secondsBetweenShocks) && !_shockEnabled) // if time to turn on shock
         {
             _shockEnabled = true;
             _hitbox.enabled = true;
