@@ -12,7 +12,7 @@ public class Hitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
+        if(enabled && collision.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
         {
             if (currentHit == null)
             {
@@ -25,9 +25,24 @@ public class Hitbox : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
+        if (enabled && collision.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
+        {
+            if (currentHit == null)
+            {
+                Debug.LogError("Hitbox has no Hit assigned.", this);
+            }
+            else
+            {
+                hurtbox.Hurt(currentHit);
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (enabled && collision.gameObject.TryGetComponent<Hurtbox>(out Hurtbox hurtbox))
         {
             if (currentHit == null)
             {

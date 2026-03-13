@@ -255,4 +255,12 @@ public class MovementController2D : MonoBehaviour
 		m_CharacterAnimator.SetBool("grounded", _grounded);
 		m_CharacterAnimator.SetBool("moving", _rigidbody2D.linearVelocity.magnitude > _movingThreshold);
 	}
+
+    private void OnDrawGizmos()
+    {
+		Color groundcheckColor = Color.orange;
+		groundcheckColor.a = 0.4f;
+
+		Gizmos.DrawSphere(_groundCheckLocation.position, _groundedRadius);
+    }
 }

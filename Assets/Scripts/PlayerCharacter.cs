@@ -4,41 +4,43 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(MovementController2D), typeof(PlayerCombatController))]
 public class PlayerCharacter : Character
 {
-    [SerializeField] private Hurtbox hurtbox;
-    [SerializeField] private Animator animator;
-    
-    private MovementController2D movementController2D;
-    private PlayerCombatController combatController;
+    [SerializeField] private Animator _animator;
+    [SerializeField] protected float _postHitInvulnerabilityTime = 0.2f;
 
-    private Coroutine preventPlayerMovementFromAttackCoroutine;
+    private MovementController2D _movementController2D;
+    private PlayerCombatController _combatController;
+
+    private Coroutine _preventPlayerMovementFromAttackCoroutine;
 
     #region Unity Callbacks
     protected override void Awake()
     {
         base.Awake();
 
-        movementController2D = GetComponent<MovementController2D>();
-        combatController = GetComponent<PlayerCombatController>();
+        _movementController2D = GetComponent<MovementController2D>();
+        _combatController = GetComponent<PlayerCombatController>();
     }
 
-    protected void Start()
+    protected override void Start()
     {
-        hurtbox.OnHurt.AddListener(OnPlayerHurt);
-        health.OnDeath.AddListener(OnPlayerDied);
-        combatController.OnBasicAttack.AddListener(OnPlayerBasicAttack);
-    } 
+        base.Start();
+        _hurtbox.SetPostHitInvulnerabilityTime(_postHitInvulnerabilityTime);
+        _hurtbox.OnHurt.AddListener(OnPlayerHurt);
+        _health.OnDeath.AddListener(OnPlayerDied);
+        _combatController.OnBasicAttack.AddListener(OnPlayerBasicAttack);
+    }
     #endregion
 
     #region Getters Setters
-    public MovementController2D GetMovementController() { return movementController2D; } 
-    public PlayerCombatController GetCombatController() { return combatController; }
+    public MovementController2D GetMovementController() { return _movementController2D; } 
+    public PlayerCombatController GetCombatController() { return _combatController; }
     #endregion
 
 
     public void ResetForRespawn()
     {
-        rigidbody2D.linearVelocity = Vector2.zero;
-        health.SetHealth(health.GetMaxHealth());
+        _rigidbody2D.linearVelocity = Vector2.zero;
+        _health.SetHealth(_health.GetMaxHealth());
     }
 
     #region Event Handlers
@@ -50,27 +52,27 @@ public class PlayerCharacter : Character
     private void OnPlayerHurt(Hit hit)
     {
         Vector3 directionFromHit = (transform.position - hit.instigator.transform.position).normalized;
-        rigidbody2D.AddForce(directionFromHit * hit.knockbackAmount, ForceMode2D.Impulse);
+        _rigidbody2D.AddForce(directionFromHit * hit.knockbackAmount, ForceMode2D.Impulse);
 
-        health.AdjustHealth(-hit.damage);
-        Debug.Log($"Player hurt for {hit.damage} damage by {hit.instigator.name}. Remaining health: {health.GetCurrentHealth()}");
+        _health.AdjustHealth(-hit.damage);
+        Debug.Log($"Player hurt for {hit.damage} damage by {hit.instigator.name}. Remaining health: {_health.GetCurrentHealth()}");
     }
 
     private void OnPlayerBasicAttack()
     {
-        if(preventPlayerMovementFromAttackCoroutine != null)
+        if(_preventPlayerMovementFromAttackCoroutine != null)
         {
-            StopCoroutine(preventPlayerMovementFromAttackCoroutine);
+            StopCoroutine(_preventPlayerMovementFromAttackCoroutine);
         }
 
-        preventPlayerMovementFromAttackCoroutine = StartCoroutine(PreventPlayerMovementFromAttack());
+        _preventPlayerMovementFromAttackCoroutine = StartCoroutine(PreventPlayerMovementFromAttack());
     }
 
     private IEnumerator PreventPlayerMovementFromAttack()
     {
-        movementController2D.SetCanMove(false);
-        yield return new WaitForSeconds(combatController.GetBasicAttackMovementStopTime());
-        movementController2D.SetCanMove(true);
+        _movementController2D.SetCanMove(false);
+        yield return new WaitForSeconds(_combatController.GetBasicAttackMovementStopTime());
+        _movementController2D.SetCanMove(true);
     }
     #endregion
 }

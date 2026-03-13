@@ -7,7 +7,6 @@ public class MoleCharacter : Character
     [SerializeField] private Collider2D _mainCollider;
     [SerializeField] private Trigger _proximityTrigger;
     [SerializeField] private Rigidbody2D _rb2d;
-    [SerializeField] private Hurtbox _hurtbox;
     [SerializeField] private Hitbox _hitbox;
     private Animator _animator;
 
@@ -25,13 +24,14 @@ public class MoleCharacter : Character
 
         _hurtbox.OnHurt.AddListener(OnHurt);
 
-        health.OnDamaged.AddListener(OnDamaged);
+        _health.OnDamaged.AddListener(OnDamaged);
 
-        health.OnDeath.AddListener(OnDeath);
+        _health.OnDeath.AddListener(OnDeath);
     }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         _proximityTrigger.OnTriggerEnter.AddListener(OnObjectEnteredTrigger);
     }
 
@@ -42,20 +42,20 @@ public class MoleCharacter : Character
 
     private IEnumerator FlashRed()
     {
-        Color originialColor = mainSpriteRenderer.color;
-        mainSpriteRenderer.color = Color.red;
+        Color originialColor = _mainSpriteRenderer.color;
+        _mainSpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
 
-        mainSpriteRenderer.color = originialColor;
+        _mainSpriteRenderer.color = originialColor;
     }
 
     private void OnHurt(Hit hit)
     {
         Vector3 directionFromHit = (transform.position - hit.instigator.transform.position).normalized;
-        rigidbody2D.AddForce(directionFromHit * hit.knockbackAmount, ForceMode2D.Impulse);
+        _rigidbody2D.AddForce(directionFromHit * hit.knockbackAmount, ForceMode2D.Impulse);
 
-        health.AdjustHealth(-hit.damage);
-        Debug.Log($"{gameObject.name} hurt for {hit.damage} damage by {hit.instigator.name}. Remaining health: {health.GetCurrentHealth()}");
+        _health.AdjustHealth(-hit.damage);
+        Debug.Log($"{gameObject.name} hurt for {hit.damage} damage by {hit.instigator.name}. Remaining health: {_health.GetCurrentHealth()}");
     }
 
     private void OnDeath()
@@ -69,7 +69,7 @@ public class MoleCharacter : Character
 
     private IEnumerator DeathCoroutine()
     {
-        mainSpriteRenderer.color = Color.darkRed;
+        _mainSpriteRenderer.color = Color.darkRed;
 
         yield return new WaitForSeconds(0.5f);
 
@@ -78,7 +78,7 @@ public class MoleCharacter : Character
         while (timer < fadeTime)
         {
             // fade out
-            mainSpriteRenderer.color = new Color(mainSpriteRenderer.color.r, mainSpriteRenderer.color.g, mainSpriteRenderer.color.b, Mathf.Lerp(1f, 0f, timer / fadeTime));
+            _mainSpriteRenderer.color = new Color(_mainSpriteRenderer.color.r, _mainSpriteRenderer.color.g, _mainSpriteRenderer.color.b, Mathf.Lerp(1f, 0f, timer / fadeTime));
             timer += Time.deltaTime;
             yield return null;
         }

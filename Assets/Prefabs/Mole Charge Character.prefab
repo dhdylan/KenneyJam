@@ -135,14 +135,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732e1bedc96d86a4c890437d50a8b444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoleCharacter
-  mainSpriteRenderer: {fileID: 7306716903151006549}
+  _mainSpriteRenderer: {fileID: 7306716903151006549}
   _mainCollider: {fileID: 3916749892137516190}
   _proximityTrigger: {fileID: 4735488100410772898}
   _rb2d: {fileID: 8039088072441920951}
   _hurtbox: {fileID: 1195979058825639114}
   _hitbox: {fileID: 7387429030172344003}
   _timeToRun: 5
-  _speedToRun: 1
+  _speedToRun: 4.5
+  _acceleration: 2.5
 --- !u!1 &883700896654033203
 GameObject:
   m_ObjectHideFlags: 0

@@ -513,7 +513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f297d920fac2d4f8594f2194a7d726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DummyCharacter
-  mainSpriteRenderer: {fileID: 3597539124296416577}
+  _hurtbox: {fileID: 6459833114781995493}
+  _mainSpriteRenderer: {fileID: 3597539124296416577}
   mainCollider: {fileID: 5183755865089351062}
   hurtbox: {fileID: 6459833114781995493}
   hitbox: {fileID: 6383465585497324147}
