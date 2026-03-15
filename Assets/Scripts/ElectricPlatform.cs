@@ -1,7 +1,6 @@
 using Animancer;
 using UnityEngine;
 
-[RequireComponent(typeof(Hitbox))]
 public class ElectricPlatform : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
@@ -15,8 +14,8 @@ public class ElectricPlatform : MonoBehaviour
         "For example, if the time between shocks is 1s and the shock duration is 1s, setting this to 0.5\n" +
         "would result in the platforms electricity turning on immediately upon start.")]
     [SerializeField] private float _startPhase = 0f;
+    [SerializeField] private Hitbox _hitbox;
 
-    private Hitbox _hitbox;
     private float _lastShockEndTime = 0f;
     private float _shockPeriod = 0f;
     private bool _shockEnabled = false;
@@ -29,7 +28,6 @@ public class ElectricPlatform : MonoBehaviour
 
     private void Start()
     {
-        _hitbox = GetComponent<Hitbox>();
         _hitbox.enabled = false;
         _electricitySpriteRenderer.enabled = false;
     }
