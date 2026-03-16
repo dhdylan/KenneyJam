@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6803473101991489450}
   - component: {fileID: 6779153807238941884}
   - component: {fileID: 6233504039438541408}
+  - component: {fileID: 2036844737921427795}
+  - component: {fileID: 7740822954144675298}
   m_Layer: 6
   m_Name: Electricity
   m_TagString: Untagged
@@ -228,6 +230,65 @@ MonoBehaviour:
   _Animator: {fileID: 6779153807238941884}
   _Transitions: {fileID: 0}
   _ActionOnDisable: 0
+--- !u!61 &2036844737921427795
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783778311167362293}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.34}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 0.11}
+  m_EdgeRadius: 0
+--- !u!114 &7740822954144675298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783778311167362293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf60bdc860ed3d44a779a45c0842987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hitbox
+  currentHit: {fileID: 11400000, guid: 8b0b8d8006f834d4e82bcd963aee6168, type: 2}
 --- !u!1 &9064826705855705949
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +300,6 @@ GameObject:
   - component: {fileID: 5820239551244254471}
   - component: {fileID: 8619301939731592903}
   - component: {fileID: 331420411968658186}
-  - component: {fileID: 5654883787305600657}
   - component: {fileID: 3686725906366681097}
   m_Layer: 6
   m_Name: Electric Platform
@@ -369,19 +429,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5654883787305600657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9064826705855705949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bf60bdc860ed3d44a779a45c0842987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  currentHit: {fileID: 11400000, guid: 8b0b8d8006f834d4e82bcd963aee6168, type: 2}
 --- !u!114 &3686725906366681097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,3 +448,4 @@ MonoBehaviour:
   _secondsBetweenShocks: 3
   _shockDuration: 1
   _startPhase: 0
+  _hitbox: {fileID: 7740822954144675298}
